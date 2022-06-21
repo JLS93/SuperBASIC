@@ -25,6 +25,8 @@ namespace SuperBASIC
 				lib.AddFunction(new Functions.SolveLinear(), 2, "SOLVELINEAR");
 				lib.AddFunction(new Functions.Rem(), 2, "REM");
 				lib.AddFunction(new Functions.Accumulate(), 2, "ACCUMULATE");
+				lib.AddFunction(new Functions.Sin(), 1, "SIN");
+				lib.AddFunction(new Functions.ASin(), 1, "ASIN");
 				Runtime r = new Runtime(lib);
 				if (args.Length <= 1)
 				{
