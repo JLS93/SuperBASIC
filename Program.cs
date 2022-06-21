@@ -23,6 +23,8 @@ namespace SuperBASIC
 				lib.AddFunction(new Functions.Pi(), 0, "PI");
 				lib.AddFunction(new Functions.Euler(), 0, "EULER");
 				lib.AddFunction(new Functions.SolveLinear(), 2, "SOLVELINEAR");
+				lib.AddFunction(new Functions.Rem(), 2, "REM");
+				lib.AddFunction(new Functions.Accumulate(), 2, "ACCUMULATE");
 				Runtime r = new Runtime(lib);
 				if (args.Length <= 1)
 				{
@@ -36,6 +38,7 @@ namespace SuperBASIC
 			} catch (Parser.ParseException e)
 			{
 				Console.WriteLine($"Parsing failed:\n{e}");
+				
 			}
 		}
 	}
